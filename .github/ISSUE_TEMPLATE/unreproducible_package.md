@@ -29,3 +29,8 @@ nix-store --read-log $(nix-instantiate '<nixpkgs>' -A ...)
 
 (please share the relevant fragment of the diffoscope output here,
 and any additional analysis you may have done)
+
+
+### Prioritisation
+
+Add :+1: for [issues you find important](https://github.com/NixOS/nixpkgs/issues?q=is%3Aissue+is%3Aopen+sort%3Areactions-%2B1-desc).

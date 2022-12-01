@@ -32,3 +32,7 @@ Please run `nix-shell -p nix-info --run "nix-info -m"` and paste the result.
 [user@system:~]$ nix-shell -p nix-info --run "nix-info -m"
 output here
 ```
+
+### Prioritisation
+
+Add :+1: for [issues you find important](https://github.com/NixOS/nixpkgs/issues?q=is%3Aissue+is%3Aopen+sort%3Areactions-%2B1-desc).

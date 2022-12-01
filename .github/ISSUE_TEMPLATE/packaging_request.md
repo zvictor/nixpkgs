@@ -16,3 +16,7 @@ _describe the project a little_
 * source URL:
 * license: mit, bsd, gpl2+ , ...
 * platforms: unix, linux, darwin, ...
+
+**Prioritisation**
+
+Add :+1: for [issues you find important](https://github.com/NixOS/nixpkgs/issues?q=is%3Aissue+is%3Aopen+sort%3Areactions-%2B1-desc).

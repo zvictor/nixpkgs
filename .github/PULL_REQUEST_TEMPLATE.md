@@ -29,6 +29,11 @@ For new packages please briefly describe the package or provide a link to its ho
   - [ ] (Release notes changes) Ran `nixos/doc/manual/md-to-db.sh` to update generated release notes
 - [ ] Fits [CONTRIBUTING.md](https://github.com/NixOS/nixpkgs/blob/master/CONTRIBUTING.md).
 
+
+###### Prioritisation
+
+Add :+1: for [pull requests you find important](https://github.com/NixOS/nixpkgs/pulls?q=is%3Aopen+sort%3Areactions-%2B1-desc).
+
 <!--
 To help with the large amounts of pull requests, we would appreciate your
 reviews of other pull requests, especially simple package updates. Just leave a
