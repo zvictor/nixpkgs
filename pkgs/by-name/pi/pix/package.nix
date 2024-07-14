@@ -26,7 +26,7 @@
 , python3
 , desktop-file-utils
 , itstool
-, xapp
+, cinnamon
 }:
 
 stdenv.mkDerivation rec {
@@ -72,7 +72,7 @@ stdenv.mkDerivation rec {
     libsecret
     libtiff
     libwebp
-    xapp
+    cinnamon.xapp
   ];
 
   postPatch = ''
