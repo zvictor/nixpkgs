@@ -1223,6 +1223,13 @@ in mkLicense lset) ({
     fullName = "The Unlicense";
   };
 
+  unrar = {
+    fullName = "UnRAR - free utility for RAR archives: License for use and distribution of FREEWARE version";
+    # also contained the in the source of the unrar package
+    url = "https://fedoraproject.org/wiki/Licensing:Unrar";
+    free = false;
+  };
+
   upl = {
     spdxId = "UPL-1.0";
     fullName = "Universal Permissive License";
