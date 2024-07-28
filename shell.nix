@@ -30,6 +30,7 @@ let
   };
 in
 pkgs.mkShellNoCC {
+  name = "nixpkgs";
   packages = [
     # The default formatter for Nix code
     # https://github.com/NixOS/nixfmt
