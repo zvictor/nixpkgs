@@ -76,7 +76,7 @@ rec {
         )
         env);
 
-  buildShellEnv = { drvAttrs }:
+  buildShellEnv = { drvAttrs, promptPrefix ? "build shell", promptName ? null }:
     let
       name = drvAttrs.pname or drvAttrs.name or "shell";
       env = unstructuredDerivationInputEnv { inherit drvAttrs; };
@@ -113,7 +113,7 @@ rec {
         esac
 
         # Prefix a line to the prompt to indicate that we are in a build shell
-        PS1=$"\n(\[\033[1;33m\]build shell: \[\033[1;34m\]$name\[\033[1;33m\]\[\033[0m\]) $PS1"
+        PS1=$"\n(\[\033[1;33m\]"${lib.escapeShellArg promptPrefix}$": \[\033[1;34m\]"${if promptName != null then lib.escapeShellArg promptName else ''"$name"''}"\[\033[1;33m\]\[\033[0m\]) $PS1"
 
         runHook shellHook
       '';
