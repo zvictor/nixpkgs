@@ -85,6 +85,7 @@ in
   # passthru tests
 , pkgsi686Linux
 , runCommand
+, pkgs
 }: let
 self = stdenv.mkDerivation {
   pname = "nix";
@@ -276,6 +277,12 @@ self = stdenv.mkDerivation {
         fi
         touch $out
       '';
+
+      /** Intended to test `lib`, but also a good smoke test for Nix */
+      nixpkgs-lib = import ../../../../lib/tests/test-with-nix.nix {
+        inherit lib pkgs;
+        nix = self;
+      };
     };
   };
 
