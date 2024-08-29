@@ -5,6 +5,7 @@
   qttools,
   qtdeclarative,
   qt5compat,
+  kitemmodels,
   qqc2-desktop-style,
 }:
 # Kirigami has a runtime dependency on qqc2-desktop-style,
@@ -19,7 +20,7 @@ let
 
     extraNativeBuildInputs = [qtsvg qttools];
     extraBuildInputs = [qtdeclarative];
-    extraPropagatedBuildInputs = [qt5compat];
+    extraPropagatedBuildInputs = [qt5compat kitemmodels];
   };
 in stdenv.mkDerivation {
   pname = "kirigami-wrapped";
