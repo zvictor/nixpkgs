@@ -12,7 +12,7 @@ with lib;
       default = true;
       description = ''
         Whether to install files to support the
-        [XDG Autostart specification](https://specifications.freedesktop.org/autostart-spec/autostart-spec-latest.html).
+        [XDG Autostart specification](https://specifications.freedesktop.org/autostart-spec/latest).
       '';
     };
   };
